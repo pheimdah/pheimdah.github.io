@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>heimåt</title>
+
+    <style>
+      @font-face {
+        font-family: 'Perfect DOS VGA 437';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Perfect DOS VGA 437 Win'), url('Perfect DOS VGA 437 Win.woff') format('woff');
+      }
+
+      body {
+        background: black;
+        color: #a9a9a9;
+        font-family: 'Perfect DOS VGA 437';
+        font-weight: normal;
+      }
+      a { color: #a9a9a9; text-decoration: none; }
+      .greentext { color: #8ae234; }
+      .bluetext { color: #7294a6; }
+
+      .blink {
+        -webkit-animation: blink 1s step-end infinite;
+        animation: blink 1s step-end infinite;
+      }
+      @-webkit-keyframes blink {
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+      }
+      @keyframes blink {
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div><span class="greentext">guest@web</span>:<span class="bluetext">/var/www</span>$ cat about.yaml</div>
+    <div>---</div>
+    <div>company:</div>
+    <div>&nbsp;&nbsp;name: Heimåt</div>
+    <div>&nbsp;&nbsp;organization_number: 3090657-5</div>
+    <div>&nbsp;&nbsp;owner:</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;name: Patrik Heimdahl</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;email: <a href="mailto:patrik@heim.ax">patrik@heim.ax</a></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;github: <a href="https://github.com/pheimdah/">https://github.com/pheimdah</a></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;linkedin: <a href="https://www.linkedin.com/in/patrik-heimdahl/">https://www.linkedin.com/in/patrik-heimdahl</a></div>
+
+    <div><span class="greentext">guest@web</span>:<span class="bluetext">/var/www</span>$ <span class="blink">&#9608;</span></div>
+  </body>
+</html>
